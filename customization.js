@@ -57,7 +57,7 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   },
   MEDIAFIRE: function(pushname,data,fileSize){
     return `
-> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+> [⚡ 𝐊𝐀𝐕𝐈𝐍𝐃𝐔 〽ᴅ ⚡]
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ M E D I A F I R A ]
 > ======================
@@ -80,7 +80,7 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   },
   SPOTIFY: function(pushname,item) {
     return `
-${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
+${config.BOTNAME || "> [⚡ 𝐊𝐀𝐕𝐈𝐍𝐃𝐔 〽ᴅ ⚡]"}
 > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
 > [ S P O T I F Y  D L ]
 > =====================
@@ -97,7 +97,7 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   MOVIETITLE: "> *『⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 𝑪𝑰𝑵𝑬𝑴𝑨 』*",
   ALIVEMSG: function (config, pushname, runtime) {
     return `
-    > [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]
+    > [⚡ 𝐊𝐀𝐕𝐈𝐍𝐃𝐔 〽ᴅ ⚡]
     > 𝙷𝚎𝚕𝚕𝚘 𝚃𝚑𝚎𝚛𝚎 *${pushname}*
     > [  A  L  I  V  E  ]
     > =======================
@@ -123,8 +123,8 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   },
   SINHALASUB: function (movieData,oce) {
     return `
-> *『⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 𝑪𝑰𝑵𝑬𝑴𝑨 』*
-> =====================
+> *【 🎞️ 𝐂𝐈𝐍𝐄𝐌𝐀𝐗 𝐇𝐃 ᴹᴼⱽᴵᴱ ᴴᵁᴮ 🇱🇰】*
+> Ӂ=====================Ӂ
 > 🎬 *Title:* ${oce}${movieData.title}${oce}
 > 📝 *Tagline:* ${oce}${movieData.metadata.tagline || "N/A"}${oce}
 > ⭐ *IMDb:* ${oce}${movieData.metadata.imdbRating || "N/A"}${oce}
@@ -135,14 +135,14 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
 > 🗣️ *Language:* ${oce}${movieData.metadata.language}${oce}
 > 👨‍💻 *Subtitle By:* ${oce}${movieData.metadata.subtitleAuthor}${oce}
 > 🌐 *Subtitle Site:* ${oce}${movieData.metadata.subtitleSite}${oce}
-> =====================
+> 〠=====================〠
 > 📌 *Description:*  
 > ${oce}_${movieData.description}_${oce}`.trim();
   },
   CINESUBZ: function (title, metadata, rating,tagline,genres,quality,description,oce) {
     return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
-> =====================
+> *【 🎞️ 𝐂𝐈𝐍𝐄𝐌𝐀𝐗 𝐇𝐃 ᴹᴼⱽᴵᴱ ᴴᵁᴮ 🇱🇰】*
+> Ӂ=====================Ӂ
 > 🎬 *Title:* ${oce}${title}${oce}
 > 📝 *Tagline:* ${oce}${tagline || "N/A"}${oce}
 > ⭐ *IMDb:* ${oce}${typeof rating === 'object' ? rating.value : rating}${oce}
@@ -153,7 +153,7 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
 > 🗣️ *Language:* ${oce}${metadata?.language || "English"}${oce}
 > 👨‍💻 *Subtitle By:* ${oce}${metadata?.subtitleBy || "N/A"}${oce}
 > 📊 *Quality:* ${oce}${quality}${oce}
-> =====================
+> 〠=====================〠
 > 📌 *Description:*  
 > ${oce}_${description || "No description available."}_${oce}
 
@@ -161,29 +161,29 @@ ${config.BOTNAME || "> [⚡ 𝗫Ｐ𝗥Ｏ𝗩𝗘𝗥𝗖𝗘 〽ᴅ ⚡]"}
   },
   CINETVSHOW: function (episodeInfo,quality,oce) {
     return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
-> =====================
+> *【 🎞️ 𝐂𝐈𝐍𝐄𝐌𝐀𝐗 𝐇𝐃 ᴹᴼⱽᴵᴱ ᴴᵁᴮ 🇱🇰】*
+> Ӂ=====================Ӂ
 > 📺 *Series:* ${oce}${episodeInfo.series || "N/A"}${oce}
 > 🎬 *Episode:* ${oce}${episodeInfo.seasonEpisode || "N/A"}${oce}
 > 🏷️ *Title:* ${oce}${episodeInfo.episodeTitle || "N/A"}${oce}
 > 📅 *Date:* ${oce}${episodeInfo.date || "N/A"}${oce}
 > ⭐ *Rating:* ${oce}${episodeInfo.rating?.value || "N/A"}/10${oce}
 > 📊 *Quality:* ${oce}${quality || "480p"}${oce}
-> =====================
+> 〠=====================〠
 > 📌 *Episode Info:*
 > ${oce}_${episodeInfo.title || "No additional information available."}_${oce}`.trim();
   },
   CINETVSHOWALLDL: function (seriesTitle,rating,metadata,genres,movieData,oce) {
     return `
-> *『⚡ 𝗫ＰＲＯ𝗩ＥＲＣＥ 𝑪𝑰𝑵𝑬𝑴𝑨 』*
-> =====================
+> *【 🎞️ 𝐂𝐈𝐍𝐄𝐌𝐀𝐗 𝐇𝐃 ᴹᴼⱽᴵᴱ ᴴᵁᴮ 🇱🇰】*
+> Ӂ=====================Ӂ
 > 🎬 *Series:* ${oce}${seriesTitle}${oce}
 > ⭐ *IMDb:* ${oce}${rating}${oce}
 > 🗓️ *Year:* ${oce}${metadata.year || "N/A"}${oce}
 > 🎭 *Genres:* ${oce}${genres}${oce}
 > 📊 *Seasons:* ${oce}${movieData.seasons.length}${oce}
 > 🌐 *Language:* ${oce}${metadata.language || "English"}${oce}
-> =====================
+> 〠=====================〠
 > 📌 *Series Description:*  
 > ${oce}_${movieData.description || "No description available."}_${oce}`.trim();
   },
